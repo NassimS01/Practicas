@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Complete Website Design using HTML and CSS</title>
+</head>
+
+<body>
+        <header id="header">
+                <div class="container">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                        <div class="header-text">
+                                <h1>Text purpose is to <br> teach, bring learning to people</h1>
+                                <span class="square"></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae voluptatem
+                                        placeat magni in, modi, eveniet dignissimos natus, error numquam nobis
+                                        aspernatur quod cumque veniam necessitatibus ducimus aliquam iure qui.</p>
+                                <button class="learn-more"> Read More
+                                </button>
+                                <div class="line">
+                                        <span class="line-1"></span><br>
+                                        <span class="line-2"></span><br>
+                                        <span class="line-3"></span>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <nav id="sideNav">
+                <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">OFFER</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                </ul>
+        </nav>
+        <img src="images/menu.png" id="menuBtn" alt="menu">
+
+        <!-- about -->
+
+        <section id="about">
+                <div class="about-left-col">
+                        <img src="images/about.png" alt="">
+                </div>
+                <div class="about-right-col">
+                        <div class="about-text">
+                                <h2 class="h2-about">About Us</h2>
+                                <span class="square"></span>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dolores tempora minima
+                                        optio pariatur nam assumenda iure esse quod fugiat, facilis error numquam est
+                                        natus temporibus exercitationem. Eveniet, sequi nemo.</p>
+                                        <br>
+                                        <br>
+                                <div class="line">
+                                        <span class="line-1"></span><br>
+                                        <span class="line-2"></span><br>
+                                        <span class="line-3"></span>
+                                </div>
+
+                                <h2>"Learning is not attained by chance, it must be sought for with ardor and attended
+                                        to with diligence"</h2>
+                                <h3>----Abigail Adams</h3>
+                        </div>
+                </div>
+        </section>
+        <script>
+                var menuBtn = document.getElementById("menuBtn");
+                var sideNav = document.getElementById("sideNav");
+
+                sideNav.style.right = "-250px";
+                menuBtn.onclick = function () {
+                        if (sideNav.style.right == "-250px") {
+                                sideNav.style.right = "0";
+                        }
+                        else {
+                                sideNav.style.right = "-250px";
+                        }
+                }
+        </script>
+</body>
+
+</html>
